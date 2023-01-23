@@ -1,0 +1,5 @@
+<p>Name: {{dev.lastName}}</p>
+<p>First name: {{dev.firstName}}</p>
+<p>Age: {{dev.age}}</p>
+<p>Bio: {{dev.bio}}</p>
+<ng-container *ngFor="let i of dev.skills"><app-skill [skill]="i"></app-skill><p>{{i.name}} - {{i.site}}</p></ng-container>
